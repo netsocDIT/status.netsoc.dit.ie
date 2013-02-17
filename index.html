@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Netsoc Status Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.css" rel="stylesheet" media="screen">
     <link rel="icon" type="image/png" href="favicon.png">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
 
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">Netsoc Status Page</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span12">
+                <p>
+                    Welcome to the NetSoc status page.
+                    If you are having any issues not listed below,
+                    please log a ticket with our support team at
+                    <a href="https://support.netsoc.dit.ie">support.netsoc.dit.ie</a>
+                    or by sending an email to <a href="mailto:support@netsoc.dit.ie">support@netsoc.dit.ie</a>
+                </p>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span6">
+                <div class="well">
+                    <h1>Outages</h1>
+                </div>
+
+                <div id="outages-container">
+
+                </div>
+            </div>
+            <div class="span6">
+                <div class="well">
+                    <h1>Upcoming Down Time</h1>
+                </div>
+                <div id="downtime-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 <script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="issues.json.js"></script>
+<script src="page.js"></script>
+
 </body>
 </html>
