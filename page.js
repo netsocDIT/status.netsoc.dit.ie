@@ -91,7 +91,7 @@ for (issue in downtime) {
     $(label).text(downtime[issue].type);
 
     $(heading).html(downtime[issue].title + "<small> : "+ downtime[issue].date +" - Duration:"+ downtime[issue].duration +"</small>");
-    $(desc).text(downtime[issue].desc )
+    $(desc).html(downtime[issue].desc )
     $(block).append(icon);
     $(block).append(label);
     $(block).append(heading);
