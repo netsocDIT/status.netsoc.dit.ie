@@ -41,7 +41,7 @@ for (issue in issues) {
         }
     }
     $(heading).html(issues[issue].title + "<small> : "+ issues[issue].date +"</small>");
-    $(desc).text(issues[issue].desc )
+    $(desc).html(issues[issue].desc )
     $(block).append(icon);
     $(block).append(label);
     $(block).append(heading);
