@@ -7,11 +7,27 @@
  */
 issues = [
     {
-        type:"Outage",
+        type:"Application Issue",
         date:"17/02/2013",
-        title:"Chef Down",
+        title:"Minecraft server",
+        level:1,
+        desc:"The minecraft server is currently down, awaiting a rebuild by a sysadmin",
+        fixed:false
+    },
+    {
+        type:"Network Issue",
+        date:"17/02/2013",
+        title:"IRC IDENT issues",
+        level:2,
+        desc:"DIT was blocking incoming IDENT packets, causing people connecting to some outside IRC networks to have intermittent problems",
+        fixed:true
+    },
+    {
+        type:"Outage",
+        date:"25/01/2013",
+        title:"DIT Firewall Issues",
         level:3,
-        desc:"we are having issue on our login server chef, we will update with more info soon.",
+        desc:"We had issues with the DIT firewall upgrade, causing unpredictable issues for people connecting from outside DIT",
         fixed:true
     }
 ]
@@ -19,10 +35,9 @@ issues = [
 downtime = [
     {
         type:"Outage",
-        date:"17/02/2013",
-        title:"Network Upgrades",
-        duration:"2 hrs",
-        desc:"we are having issue on our login server chef, we will update with more info soon.",
-        fixed:false
+        date:"TBC",
+        title:"Societies Webserver Upgrade",
+        duration:"1 Day",
+        desc:"We will upgrading the webserver used to host the societies websites. This will involve some downtime. Will will advise all affected societies when we have a date"
     }
 ]

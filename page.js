@@ -5,6 +5,7 @@
  * Time: 22:10
  * To change this template use File | Settings | File Templates.
  */
+var status = 0;
 for (issue in issues) {
     var block = document.createElement('div');
     var icon = document.createElement('i');
@@ -27,6 +28,7 @@ for (issue in issues) {
         }
     } else {
         $(label).text(issues[issue].type);
+        if (issues[issue].level > status) status = issues[issue].level;
         if (issues[issue].level == 3){
             $(label).addClass('label-important');
             $(icon).addClass('icon-fire');
@@ -46,6 +48,37 @@ for (issue in issues) {
     $(block).append(desc);
     $(block).appendTo('#outages-container');
 }
+
+switch(status){
+    case "0":
+        top_banner('success', 'Netsoc has no issues - if you are having issues, let us know at <a href="https://support.netsoc.dit.ie">support.netsoc.dit.ie</a> ');
+        break;
+    case "1":
+        top_banner('info', "Netsoc has a small issue - see below for details");
+        break;
+    case "2":
+        top_banner('warning', "Netsoc has an issue - see below for details");
+        break;
+    case "3":
+        top_banner('important', "Netsoc has a serious outage - see below for details");
+        break;
+    default:
+        top_banner('important', "Netsoc has a serious outage - see below for details");
+        break;
+}
+/***
+ * @author Graham Hayes
+ * @function
+ * @description Creates the top banner based on highest level issue open
+ * @param {String} level - highest level of issues
+ * @param {String} text - text to display
+ */
+function top_banner(level, text){
+    var inner_text = document.createElement('h2');
+    $(inner_text).html(text);
+    $('#top-banner').addClass('label-'+level).append(inner_text);
+}
+
 for (issue in downtime) {
     var block = document.createElement('div');
     var icon = document.createElement('i');
