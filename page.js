@@ -54,7 +54,7 @@ if (status == 0){
 }else if (status == 1){
         top_banner('info', "Netsoc has a small issue - see below for details");
 }else if (status == 2){
-        top_banner('warning', "Netsoc has an issue - see below for details");
+        top_banner('warning', "Our services have an issue - see below for details");
 }else if (status == 3){
         top_banner('important', "Netsoc has a serious outage - see below for details");
 }else{
