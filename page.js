@@ -49,22 +49,16 @@ for (issue in issues) {
     $(block).appendTo('#outages-container');
 }
 
-switch(status){
-    case "0":
+if (status == 0){
         top_banner('success', 'Netsoc has no issues - if you are having issues, let us know at <a href="https://support.netsoc.dit.ie">support.netsoc.dit.ie</a> ');
-        break;
-    case "1":
+}else if (status == 1){
         top_banner('info', "Netsoc has a small issue - see below for details");
-        break;
-    case "2":
+}else if (status == 2){
         top_banner('warning', "Netsoc has an issue - see below for details");
-        break;
-    case "3":
+}else if (status == 3){
         top_banner('important', "Netsoc has a serious outage - see below for details");
-        break;
-    default:
+}else{
         top_banner('important', "Netsoc has a serious outage - see below for details");
-        break;
 }
 /***
  * @author Graham Hayes
