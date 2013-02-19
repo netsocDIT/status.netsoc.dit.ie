@@ -7,6 +7,14 @@
  */
 issues = [
     {
+        type:"Single Site Issue",
+        date:"07/02/2013",
+        title:"edition.ie website down",
+        level:2,
+        desc:"The Wordpress install hosting this site had a security issue, and is currently being rebuild. Tracked as ticket #728112",
+        fixed:false
+    },
+    {
         type:"Application Issue",
         date:"17/02/2013",
         title:"Minecraft server",
