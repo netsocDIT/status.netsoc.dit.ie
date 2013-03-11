@@ -12,7 +12,7 @@ issues = [
         title:"edition.ie website down",
         level:2,
         desc:"The Wordpress install hosting this site had a security issue, and is currently being rebuild. Tracked as ticket #728112",
-        fixed:false
+        fixed:true
     },
     {
         type:"Application Issue",
