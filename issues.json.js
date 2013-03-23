@@ -11,7 +11,7 @@ issues = [
         date:"23/03/2013",
         title:"Complete Network Failure",
         level:3,
-        desc:"At 21.02 today, we got notification of a complete network failure from our monitoring systems.<br><br>We have logged the issue with DIT, and are awaiting a response. The symptoms are similar to the network outage we experienced over christmas, and effects all servers, and websites hosted by NetSoc.<br><br> Our sysadmin team are monitoring the situation, and will update members when we have more information. <br><br>Anyone with any queries, email <a href='mailto:sysadmins@netsoc.dit.ie'>sysadmins@netsoc.dit.ie</a>, or join #dit on irc.freenode.net'",
+        desc:"At 21.02 today, we got notification of a complete network failure from our monitoring systems.<br><br>The symptoms are similar to the network outage we experienced over christmas, but we do not have physical access to do diagnostics yet. It currently affects all servers, and websites hosted by NetSoc.<br><br> Our sysadmin team are monitoring the situation, and will update members when we have more information. <br><br>Anyone with any queries, email <a href='mailto:sysadmins@netsoc.dit.ie'>sysadmins@netsoc.dit.ie</a>, or join #dit on irc.freenode.net'",
         fixed:false
     },
     {
