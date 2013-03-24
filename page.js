@@ -13,6 +13,7 @@ for (issue in issues) {
     var heading = document.createElement('h3');
     var desc = document.createElement('p');
     $(block).addClass('well');
+    $(block).addClass('level_'+issues[issue].level);
     $(icon).addClass('icon-2x pull-right');
     $(label).addClass('label');
 
