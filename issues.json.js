@@ -23,6 +23,7 @@ issues = [
 		date:"25/03/2012 - 09:09",
 		author:"Graham",
 		update:"We seem to have resolved the issue, if you notice any problems, please email us <a href='mailto:sysadmins@netsoc.dit.ie'>sysadmins@netsoc.dit.ie</a>"
+	    }
         ]
     },
     {
