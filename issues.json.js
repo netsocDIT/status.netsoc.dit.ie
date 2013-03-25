@@ -35,14 +35,6 @@ issues = [
         fixed:true
     },
     {
-        type:"Application Issue",
-        date:"17/02/2013",
-        title:"Minecraft server",
-        level:1,
-        desc:"The minecraft server is currently down, awaiting a rebuild by a sysadmin",
-        fixed:false
-    },
-    {
         type:"Network Issue",
         date:"17/02/2013",
         title:"IRC IDENT issues",
