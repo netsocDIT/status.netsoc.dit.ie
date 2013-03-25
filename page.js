@@ -47,6 +47,17 @@ for (issue in issues) {
     $(block).append(label);
     $(block).append(heading);
     $(block).append(desc);
+    for (update in issues[issue].updates){
+        var comment = document.createElement('div');
+        $(comment).addClass('well');
+        var cmtTitle = document.createElement('h4');
+        var cmtText = document.createElement('p');
+        $(cmtTitle).html(issues[issue].updates[update].date + "<small> : by "+ issues[issue].updates[update].author +"</small>");
+        $(cmtText).html(issues[issue].updates[update].update);
+        $(comment).append(cmtTitle);
+        $(comment).append(cmtText);
+        $(block).append(comment);
+    }
     $(block).appendTo('#outages-container');
 }
 
@@ -73,23 +84,32 @@ function top_banner(level, text){
     $(inner_text).html(text);
     $('#top-banner').addClass('label-'+level).append(inner_text);
 }
+if (downtime.length > 0){
+    for (issue in downtime) {
+        var block = document.createElement('div');
+        var icon = document.createElement('i');
+        var label = document.createElement('span');
+        var heading = document.createElement('h3');
+        var desc = document.createElement('p');
+        $(block).addClass('well');
+        $(icon).addClass('icon-2x pull-right');
+        $(label).addClass('label label-info');
+        $(label).text(downtime[issue].type);
 
-for (issue in downtime) {
+        $(heading).html(downtime[issue].title + "<small> : "+ downtime[issue].date +" - Duration:"+ downtime[issue].duration +"</small>");
+        $(desc).html(downtime[issue].desc )
+        $(block).append(icon);
+        $(block).append(label);
+        $(block).append(heading);
+        $(block).append(desc);
+        $(block).appendTo('#downtime-container');
+    }
+} else {
     var block = document.createElement('div');
-    var icon = document.createElement('i');
-    var label = document.createElement('span');
     var heading = document.createElement('h3');
-    var desc = document.createElement('p');
     $(block).addClass('well');
-    $(icon).addClass('icon-2x pull-right');
-    $(label).addClass('label label-info');
-    $(label).text(downtime[issue].type);
-
-    $(heading).html(downtime[issue].title + "<small> : "+ downtime[issue].date +" - Duration:"+ downtime[issue].duration +"</small>");
-    $(desc).html(downtime[issue].desc )
-    $(block).append(icon);
-    $(block).append(label);
+    $(heading).text('No Upcoming downtime planned')
     $(block).append(heading);
-    $(block).append(desc);
     $(block).appendTo('#downtime-container');
 }
+

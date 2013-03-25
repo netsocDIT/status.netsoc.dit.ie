@@ -1,9 +1,18 @@
 .level_3{
-    -webkit-animation: pulsate 5s ease-out;
+    -webkit-animation: pulsate-border 5s ease-out;
     -webkit-animation-iteration-count: infinite;
 }
-@-webkit-keyframes pulsate {
+#top-banner.label-important{
+    -webkit-animation: pulsate-back 5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate-border {
     0% { -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);}
     50% { -webkit-box-shadow: 0 0 4px rgba(255, 0, 0, 0.8);}
     100% { -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);}
+}
+@-webkit-keyframes pulsate-back {
+    0% { background:rgba(0, 0, 0, 0.8);}
+    50% { background:rgba(255, 0, 0, 0.8);}
+    100% { background:rgba(0, 0, 0, 0.8);}
 }
