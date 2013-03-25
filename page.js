@@ -13,7 +13,6 @@ for (issue in issues) {
     var heading = document.createElement('h3');
     var desc = document.createElement('p');
     $(block).addClass('well');
-    $(block).addClass('level_'+issues[issue].level);
     $(icon).addClass('icon-2x pull-right');
     $(label).addClass('label');
 
@@ -28,6 +27,7 @@ for (issue in issues) {
             $(icon).addClass('icon-info-sign');
         }
     } else {
+        $(block).addClass('level_'+issues[issue].level);
         $(label).text(issues[issue].type);
         if (issues[issue].level > status) status = issues[issue].level;
         if (issues[issue].level == 3){
