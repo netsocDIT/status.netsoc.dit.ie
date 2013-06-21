@@ -8,6 +8,14 @@
 issues = [
     {
         type:"Network Failure",
+        date:"21/06/2013",
+        title:"Complete Network Failure",
+        level:1,
+        desc:"As of 11.30 this morning we have lost all network traffic on our internal network. We have an admin en route to diagnose and fix. Will update this page as we know more",
+        fixed:false,
+    },
+    {
+        type:"Network Failure",
         date:"23/03/2013",
         title:"Complete Network Failure",
         level:3,
