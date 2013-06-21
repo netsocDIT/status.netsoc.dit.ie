@@ -12,7 +12,14 @@ issues = [
         title:"Some Internal Systems Down",
         level:2,
         desc:"We are still recovering some internal systems, these are being tracked under ticket #966213. Anyother services that are down, please email support@netsoc.dit.ie",
-        fixed:false
+        fixed:false,
+        updates:[
+            {
+                date:"21/06/2013 - 17:30",
+                author:"Graham",
+                update:"WebIRC and  git are back, waiting for an admin to work on Minecraft / ZNC"
+            }
+        ]
     },
     {
         type:"Network Failure",
