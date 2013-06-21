@@ -7,6 +7,14 @@
  */
 issues = [
     {
+        type:"Systems Outage",
+        date:"21/06/2013",
+        title:"Some Internal Systems Down",
+        level:2,
+        desc:"We are still recovering some internal systems, these are being tracked under ticket #966213. Anyother services that are down, please email support@netsoc.dit.ie",
+        fixed:false
+    },
+    {
         type:"Network Failure",
         date:"21/06/2013",
         title:"Internal Network Failure",
