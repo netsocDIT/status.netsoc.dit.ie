@@ -18,6 +18,11 @@ issues = [
                 date:"21/06/2013 - 17:30",
                 author:"Graham",
                 update:"WebIRC and  git are back, waiting for an admin to work on Minecraft / ZNC"
+            },
+            {
+                date:"22/06/2013 - 00:44",
+                author:"Graham",
+                update:"Minecraft is now back"
             }
         ]
     },
