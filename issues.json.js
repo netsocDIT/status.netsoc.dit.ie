@@ -12,7 +12,14 @@ issues = [
         title:"Internal Network Failure",
         level:3,
         desc:"As of 11.30 this morning we have lost all network traffic on our internal network. We have an admin en route to diagnose and fix. Will update this page as we know more",
-        fixed:false,
+        fixed:true,
+        updates:[
+            {
+                date:"21/06/2013 - 15:30",
+                author:"Graham",
+                update:"We have restored connectivity. Looks like a power outage took out our switch and the UPS for it failed to restart"
+            }
+        ]
     },
     {
         type:"Network Failure",
