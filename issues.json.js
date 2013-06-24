@@ -7,7 +7,7 @@
  */
 issues = [
     {
-    	type:"Systems Outage",
+    	type:"Application Failure",
         date:"24/06/2013",
         title:"Minecraft Down",
         level:1,
