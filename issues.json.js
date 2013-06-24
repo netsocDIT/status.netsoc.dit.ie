@@ -7,6 +7,14 @@
  */
 issues = [
     {
+    	type:"Systems Outage",
+        date:"24/06/2013",
+        title:"Minecraft Down",
+        level:1,
+        desc:"Minecraft server has stopped responding, an admin will update shortly.",
+        fixed:false	
+    },
+    {
         type:"Systems Outage",
         date:"21/06/2013",
         title:"Some Internal Systems Down",
