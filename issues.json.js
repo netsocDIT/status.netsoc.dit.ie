@@ -14,9 +14,11 @@ issues = [
         desc:"Minecraft server has stopped responding, an admin will update shortly.",
         fixed:false,
         updates:[
+            {	
         	date:"24/06/2013 - 16:07",
         	author:"Graham",
         	update:"This issue has been assigned to an admin, and is being tracked as ticket #513862"
+            }
         ]
     },
     {
