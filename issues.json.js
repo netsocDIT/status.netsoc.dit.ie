@@ -12,7 +12,7 @@ issues = [
         title:"Some Internal Systems Down",
         level:2,
         desc:"We are still recovering some internal systems, these are being tracked under ticket #966213. Anyother services that are down, please email support@netsoc.dit.ie",
-        fixed:false,
+        fixed:true,
         updates:[
             {
                 date:"21/06/2013 - 17:30",
@@ -23,6 +23,11 @@ issues = [
                 date:"22/06/2013 - 00:44",
                 author:"Graham",
                 update:"Minecraft is now back"
+            },
+            {
+                date:"23/06/2013 - 00:00",
+                author:"Graham",
+                update:"ZNC is now back. Anyone noticing any other services down please let us know"
             }
         ]
     },
