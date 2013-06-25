@@ -7,17 +7,30 @@
  */
 issues = [
     {
+    	type:"Maintanience",
+        date:"24/06/2013",
+        title:"Node1 down for maintainence",
+        level:1,
+        desc:"GIT and WebIRC will be down until this evening",
+        fixed:true
+    },
+    {
     	type:"Application Failure",
         date:"24/06/2013",
         title:"Minecraft Down",
         level:1,
         desc:"Minecraft server has stopped responding, an admin will update shortly.",
-        fixed:false,
+        fixed:true,
         updates:[
             {	
         	date:"24/06/2013 - 16:07",
         	author:"Graham",
         	update:"This issue has been assigned to an admin, and is being tracked as ticket #513862"
+            },
+            {	
+        	date:"25/06/2013 - 12:00",
+        	author:"Graham",
+        	update:"Server seems to have recovered"
             }
         ]
     },
