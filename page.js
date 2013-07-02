@@ -112,10 +112,3 @@ if (downtime.length > 0){
     $(block).append(heading);
     $(block).appendTo('#downtime-container');
 }
-
-jQuery.ajax({
-    url: "https://jira.netsoc.dit.ie/s/en_IErpfynf-1988229788/6099/12/1.4.0-m3/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?collectorId=7c3efe2d",
-    type: "get",
-    cache: true,
-    dataType: "script"
-});
