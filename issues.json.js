@@ -9,7 +9,7 @@ issues = [
 	{
         type:"Maintanience", //Shown in the label at the top left
         date:"30/06/2013", //Todays date
-        title:"", //Heading
+        title:"Migrating ip range over the next 2 weeks. planned downtime", //Heading
         level:2, //Determins colour of label, and icon on the right 1 = lowest, 3 = highest
         desc:"We are migrating our gateway ip over sometime between now and 2 weeks. As a result, the whole network may be offline while we switch over", // The text shown in the issue. Can be html if needed for links etc. Please try and keep it style free.
         fixed:false //If your adding it, chances are its not fixed ;-) 
