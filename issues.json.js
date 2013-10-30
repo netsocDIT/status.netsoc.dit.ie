@@ -12,12 +12,17 @@ issues = [
 	        title:"Complete Network Outage",
 	        level:3,
 	        desc:"We are currently completly down, with no network access to either rack. SysAdmins are currently trying to gain access to room to diagnose",
-	        fixed:false,
+	        fixed:true,
 	        updates:[
 	        	{	
         	date:"29/10/2013 - 14:20",
         	author:"Graham",
         	update:"Looks like a powercut people, so we will try and recover the network now. Still wait on power to be restored first."
+            },
+            {	
+        	date:"29/10/2013 - 15:30",
+        	author:"Graham",
+        	update:"We are back! let us know if we missed anything!"
             }
 	        	]
     	},
