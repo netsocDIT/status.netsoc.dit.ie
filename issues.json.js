@@ -7,6 +7,15 @@
  */
 issues = [
 	{
+	        type:"Systems Outage",
+	        date:"29/10/2013 - 11.30",
+	        title:"Complete Network Outage",
+	        level:3,
+	        desc:"We are currently completly down, with no network access to either rack. SysAdmins are currently trying to gain access to room to diagnose",
+	        fixed:false
+    	},
+	
+	{
         	type:"Maintanience", //Shown in the label at the top left
         	date:"30/06/2013", //Todays date
         	title:"Migrating ip range over the next 2 weeks. planned downtime", //Heading
